@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Psuedo Elements</title>
+    <style>
+      .quates{
+        color:rgb(215, 19, 16);
+        background-color: antiquewhite;
+        padding:10px ;
+        border: 2px solid black;
+      } 
+      .quates::before{
+        content: '*' ;
+      } 
+      .quates::after{
+        content: '😎' ;
+      } 
+    </style>
+</head>
+<body>
+    <p class="quates">Knowledge is power</p>
+    <p class="quates">Code always does what you want</p>
+    <p class="quates">All is Well</p>
+    <p class="quates">Always Remember Coding is Game of Practice</p>
+</body>
+</html>

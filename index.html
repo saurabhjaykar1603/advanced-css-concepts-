@@ -1,29 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Psuedo Elements</title>
     <style>
-      .quates{
-        color:rgb(215, 19, 16);
-        background-color: antiquewhite;
-        padding:10px ;
-        border: 2px solid black;
-      } 
-      .quates::before{
-        content: '*' ;
-      } 
-      .quates::after{
-        content: '😎' ;
-        content: attr(author) ;
-      } 
+        .quates {
+            color: rgb(215, 19, 16);
+            background-color: antiquewhite;
+            padding: 10px;
+            border: 2px solid black;
+        }
+
+        .quates::before {
+            content: '*';
+        }
+
+        .quates::after {
+            content: '😎';
+            content: attr(author);
+        }
+
+        .my-btn {
+            background-color: tomato;
+            border: none;
+            color: #fff;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 30px;
+        }
+        .my-btn::after{
+            content: 'Click here to edit';
+            position: absolute;
+            left: 100px;
+            top: 260px;
+            width: 100px;
+            font-size: 18px;
+            color: white;
+            background-color: black;
+            display: none;
+
+        }
+        .my-btn:hover::after{
+            display: block;
+        }
     </style>
 </head>
+
 <body>
     <p class="quates" author="Anand Sir">Knowledge is power</p>
     <p class="quates" author="Suraj Sir">Code always does what you want</p>
     <p class="quates" author="Yogita">All is Well</p>
     <p class="quates" author="Saurabh">Always Remember Coding is Game of Practice</p>
+
+    <!-- btn tool tip  -->
+    <div>
+        <button class="my-btn">Hover</button>
+    </div>
 </body>
+
 </html>

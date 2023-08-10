@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Varibales</title>
+    <style>
+        /* primary-color:#f794bb;
+        light-bg:#ffcce0;
+        text-color:#5c5c8a;
+         */
+        :root {
+            --primary-color: #0084ff;
+            --light-bg: #cce6ff;
+            --text-color: #fdfdfd;
+            --text-size: 12px;
+            --sm-br: 5px;
+            --md-br: 8px;
+            --lg-br: 10px;
+        }
+
+        .btn {
+            background-color: var(--primary-color);
+            color: var(--text-color);
+        }
+
+        .heading {
+            color: var(--text-color);
+            background-color: var(--primary-color);
+
+
+        }
+
+        p {
+            background-color: var(--primary-color);
+            padding: 10px;
+            border: 2px solid #cc2568;
+            border-radius: var(--md-br);
+
+        }
+    </style>
+</head>
+
+<body>
+
+</body>
+<button class="btn">Click Here</button>
+<div>
+    <h1 class="heading"> CSS Variables</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A fugit eius voluptatibus alias distinctio ut laborum
+        atque deleniti magnam ipsum vero tempora ducimus, inventore in repudiandae, consequuntur quam. Ad, inventore?
+    </p>
+</div>
+
+</html>
